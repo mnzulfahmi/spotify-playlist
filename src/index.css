@@ -129,6 +129,9 @@ a {
   padding: 0;
   list-style: none;
   transform: translateY(10%);
+  width: 100%;
+  /* change */
+  min-width: 0;
 }
 
 .project-item {
@@ -180,6 +183,8 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
   transition: color 300ms ease;
+  /* change */
+  min-width: 0;
 }
 
 .project-data.artist,
@@ -337,8 +342,9 @@ a {
   }
 
   .project-item {
-    grid-template-columns: 30px 1fr 1fr;
-    gap: 0 1rem;
+    grid-template-columns: 10px max-content minmax(0, 1fr);
+    /* gap: 0 1rem; */
+    column-gap: 0.5rem;
   }
 
   .project-data:not(.artist):not(.album) {
