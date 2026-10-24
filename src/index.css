@@ -129,9 +129,9 @@ a {
   padding: 0;
   list-style: none;
   transform: translateY(10%);
-  width: 100%;
   /* change */
-  min-width: 0;
+  /* width: 100%; */
+  /* min-width: 0; */
 }
 
 .project-item {
@@ -184,7 +184,7 @@ a {
   white-space: nowrap;
   transition: color 300ms ease;
   /* change */
-  min-width: 0;
+  /* min-width: 0; */
 }
 
 .project-data.artist,
